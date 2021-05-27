@@ -1920,7 +1920,7 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
-"@testing-library/dom@^7.28.1":
+"@testing-library/dom@*", "@testing-library/dom@^7.28.1", "@testing-library/dom@^7.31.0":
   version "7.31.0"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.31.0.tgz#938451abd3ca27e1b69bb395d4a40759fd7f5b3b"
   integrity sha512-0X7ACg4YvTRDFMIuTOEj6B4NpN7i3F/4j5igOcTI5NC5J+N4TribNdErCHOZF1LBWhhcyfwxelVwvoYNMUXTOA==
@@ -2225,6 +2225,13 @@
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-1.0.7.tgz#545158342f949e8fd3bfd813224971ecddc3fac4"
   integrity sha512-0VBprVqfgFD7Ehb2vd8Lh9TG3jP98gvr8rgehQqzztZNI7o8zS8Ad4jyZneKELphpuE212D8J70LnSNQSyO6bQ==
+
+"@types/testing-library__dom@^7.5.0":
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/@types/testing-library__dom/-/testing-library__dom-7.5.0.tgz#e0a00dd766983b1d6e9d10d33e708005ce6ad13e"
+  integrity sha512-mj1aH4cj3XUpMEgVpognma5kHVtbm6U6cHZmEFzCRiXPvKkuHrFr3+yXdGLXvfFRBaQIVshPGHI+hGTOJlhS/g==
+  dependencies:
+    "@testing-library/dom" "*"
 
 "@types/testing-library__jest-dom@^5.9.1":
   version "5.9.5"
@@ -4618,6 +4625,11 @@ dom-serializer@0:
   dependencies:
     domelementtype "^2.0.1"
     entities "^2.0.0"
+
+dom-testing-library@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/dom-testing-library/-/dom-testing-library-5.0.0.tgz#29a899d4d7aaf8aadfced4eee899e99c24d80b57"
+  integrity sha512-1Rx62geC7F3RGYW7HODhTKOMxsQZyHmlHUDcvpbc88ndPo0Wa7U2dNny4NO/Jsndp7qLpnjrlW8gWi7YkOrHgQ==
 
 domain-browser@^1.1.1:
   version "1.2.0"
