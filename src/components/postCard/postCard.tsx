@@ -10,6 +10,7 @@ import {
 } from './styles';
 
 interface PostCardProps {
+  clickHandler: () => void;
   username: string;
   email: string;
   title: string;
@@ -18,6 +19,7 @@ interface PostCardProps {
 
 export const PostCard: React.FC<PostCardProps> = (props) => {
   const {
+    clickHandler,
     username,
     email,
     title,
@@ -25,7 +27,7 @@ export const PostCard: React.FC<PostCardProps> = (props) => {
   } = props;
 
   return (
-    <PostCardWrapper>
+    <PostCardWrapper onClick={clickHandler}>
       <PostCardUserInfo>
         <PostCardUserImage />
         <PostCardUsername>{username} {'> '}</PostCardUsername>

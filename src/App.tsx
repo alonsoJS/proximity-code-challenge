@@ -1,22 +1,15 @@
 import React, { useEffect } from 'react';
+import { Post as PostType, Store } from "./store/types";
 import { PageTitle } from "./components/pageTitle/pageTitle";
-import { PostCard } from "./components/postCard/postCard";
 import { MainFrame } from "./components/mainFrame/mainFrame";
 import { useDispatch, useSelector } from "react-redux";
-import {Post, Store, User} from "./store/types";
 import { fetchPostList } from "./store/actions/fetchPostList";
-import {fetchUserList} from "./store/actions/fetchUsers";
+import { fetchUserList } from "./store/actions/fetchUsers";
+import { Post } from "./components/post/post";
 
 function App() {
   const dispatch = useDispatch();
-  const {
-    posts: {
-      postList
-    },
-    users: {
-      userList
-    }
-   } = useSelector((state: Store) => ({...state}));
+  const { postList } = useSelector((store: Store) => store.posts);
 
   useEffect(() => {
     dispatch(fetchPostList())
@@ -26,18 +19,7 @@ function App() {
   return (
     <MainFrame>
       <PageTitle text="FEED" />
-      {postList && postList.length !== 0 && postList.map((post: Post) => {
-        const postUser = userList.find((user: User) => user.id === post.userId)
-        return (
-          <PostCard
-            username={postUser?.username || ''}
-            email={postUser?.email || ''}
-            title={post.title}
-            body={post.body}
-            key={post.id}
-          />
-        )
-      })}
+      { postList.map((post: PostType) => <Post postInfo={post} key={post.id}/>) }
     </MainFrame>
   );
 }

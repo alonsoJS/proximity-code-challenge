@@ -7,13 +7,14 @@ export const PostCardWrapper = styled.div`
   padding: ${props => props.theme.spacing.standard};
   margin-top: ${props => props.theme.spacing.xl};
   width: 80%;
+  cursor: pointer;
 `;
 
 export const PostCardUserImage = styled.div`
   border-radius: 100%;
-  background: gray;
-  width: 26px;
-  height: 26px;
+  background: ${props => props.theme.colors.blueMunsell};
+  width: 40px;
+  height: 40px;
 `;
 
 export const PostCardUserInfo = styled.div`

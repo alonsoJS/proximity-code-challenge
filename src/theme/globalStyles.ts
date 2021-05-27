@@ -3,11 +3,15 @@ import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
   body,
-   #root {
+  #root {
     margin: 0;
     padding: 0;
     background: ${theme.colors.gray};
     min-height: 100vh;
+    
+    &.lockScroll {
+      overflow: hidden;
+    }
   }
   
   * {

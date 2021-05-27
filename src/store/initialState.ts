@@ -1,4 +1,4 @@
-import {Store, Post, Comment, User} from "./types";
+import { Store, Post, Comment, User } from "./types";
 
 export const postList: Post[] = [];
 

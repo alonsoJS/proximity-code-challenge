@@ -5,7 +5,7 @@ import App from './App';
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./theme/globalStyles";
 import theme from './theme/theme'
-import {store} from "./store/store";
+import { store } from "./store/store";
 
 ReactDOM.render(
   <React.StrictMode>

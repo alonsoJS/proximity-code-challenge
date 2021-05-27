@@ -1,5 +1,9 @@
 import React from 'react';
-import { PageTitleWrapper, PageTitleAccent, PageTitleText } from './styles'
+import {
+  PageTitleWrapper,
+  PageTitleAccent,
+  PageTitleText
+} from './styles'
 
 interface PageTitleProps {
   text: string;
