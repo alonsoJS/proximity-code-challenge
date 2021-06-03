@@ -35,6 +35,11 @@ export const CommentDialog: React.FC<CommentDialogProps> = (props) => {
   const [ name, setName ] = useState<string>('');
   const [ email, setEmail ] = useState<string>('');
   const [ commentBody, setCommentBody ] = useState<string>('');
+  /*
+  * scrollTop will return the scrolled distance of user,
+  * so, whenever the user wants to comment on a post
+  * the CommentDialog will show up at the correct spot
+  */
   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
   useEffect(() => {

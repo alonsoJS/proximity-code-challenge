@@ -1,5 +1,11 @@
 import React, { useEffect } from 'react';
 
+/*
+* Returns Portal Element Created
+*
+* @param {string} id - Will be the Id for the created HTML Element
+* @return {HTMLDivElement} - Html element created for the portal
+*/
 export function usePortal(id: string) {
   const rootElRef = React.useRef(document.createElement('div'));
 
