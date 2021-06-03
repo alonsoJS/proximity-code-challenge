@@ -5,7 +5,7 @@ import { PostCard } from "../postCard/postCard";
 import { loadPostComments } from "../../store/actions/loadPostComments";
 import { CommentList } from "../commentList/commentList";
 import { Loading } from "../loading/Loading";
-import { CommentButton } from "../commentButton";
+import { CommentButton } from "../commentButton/commentButton";
 import { CommentDialog } from "../commentDialog/commentDialog";
 
 interface PostWrapperProps {

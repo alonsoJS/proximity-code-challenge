@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from './styles';
 
 interface CommentButtonProps {
   clickHandler: () => void;
@@ -6,6 +7,6 @@ interface CommentButtonProps {
 
 export const CommentButton: React.FC<CommentButtonProps> = ({clickHandler}) => {
   return (
-    <button onClick={clickHandler}>Comment</button>
+    <Button onClick={clickHandler}>Write a comment &gt;</Button>
   )
 }
